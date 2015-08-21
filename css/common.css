@@ -1,0 +1,289 @@
+/**
+ * 描    述：定义公共类名及jquery插件样式
+ * 作用范围: 公共，独立样式
+ */
+
+
+/* 实心小三角 */
+
+.arrow {
+    line-height: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border: 4px dashed transparent;
+}
+
+.arrow-down {
+    border-top-style: solid;
+    border-top-color: #000;
+    border-bottom-width: 0;
+}
+
+.arrow-up {
+    border-top-width: 0;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+}
+
+.arrow-left {
+    border-right-style: solid;
+    border-right-color: #000;
+    border-left-width: 0;
+}
+
+.arrow-right {
+    border-right-width: 0;
+    border-left-style: solid;
+    border-left-color: #000;
+}
+
+
+/* 提醒框 */
+
+.alert {
+    font-weight: bold;
+    color: #c09853;
+    border: 1px solid #fbeed5;
+    background-color: #fcf8e3;
+}
+
+.alert .close {
+    font: bold 20px/20px arial;
+    position: relative;
+    top: -2px;
+    right: -21px;
+    float: right;
+    opacity: .4;
+    color: #c09853;
+}
+
+.alert .close:hover {
+    opacity: .6;
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    border: 0 none;
+    background: none;
+}
+
+.close {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    float: right;
+    opacity: .2;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+}
+
+.alert-info {
+    color: #3a87ad;
+    border-color: #bce8f1;
+    background-color: #d9edf7;
+}
+
+.alert-error {
+    color: white;
+    border-color: #eed3d7;
+    background-color: #f66;
+}
+
+.alert-success {
+    color: #468847;
+    border-color: #eed3d7;
+    background-color: #cf9;
+}
+
+#top-alert {
+    font-size: 16px;
+    z-index: 3000;
+    top: 50px;
+    right: 20px;
+    left: 220px;
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#top-alert .close {
+    position: fixed;
+    top: 75px;
+    right: 35px;
+}
+
+.alert-content {
+    max-width: 600px;
+    margin-left: 14px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+
+/* = Thinkbox弹出层插件样式
+------------------------------------------ */
+
+.thinkbox-content {
+    min-width: 100px;
+    padding: 15px;
+}
+
+.thinkbox-default .thinkbox-tools {
+    border: none!important;
+    background-color: #fff!important;
+}
+
+.thinkbox-default .thinkbox-top-left {
+    border-radius: 0!important;
+}
+
+.thinkbox-default .thinkbox-top-right {
+    border-radius: 0!important;
+}
+
+.thinkbox-default .thinkbox-bottom-left {
+    border-radius: 0!important;
+}
+
+.thinkbox-default .thinkbox-bottom-right {
+    border-radius: 0!important;
+}
+
+.thinkbox-default .thinkbox-window-actions button {
+    margin-right: 6px!important;
+    /* background-image:none!important; */
+    /* background-color:#dd0000!important; */
+}
+
+
+/* = uploadify上传插件样式
+------------------------------------------ */
+
+.uploadify-button {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #27ae60;
+}
+
+.uploadify-queue-item {
+    position: absolute;
+    width: 470px;
+    margin-top: 4px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.uploadify-queue-item .cancel {
+    float: right;
+}
+
+.uploadify-queue-item .cancel a,
+.uploadify-queue-item .cancel a:hover {
+    font-family: Consolas;
+    text-decoration: none;
+    color: #404040;
+    border-bottom: 0 none;
+}
+
+.uploadify-queue-item .fileName {
+    color: #2d7200;
+}
+
+.uploadify-error {
+    background-color: #fde5dd !important;
+}
+
+.uploadify-queue-item.completed {
+    background-color: #e5e5e5;
+}
+
+.uploadify-progress {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #e5e5e5;
+}
+
+.uploadify-progress-bar {
+    width: 1px;
+    height: 3px;
+    background-color: #09f;
+}
+
+.upload-img-box {
+    margin-top: 4px;
+}
+
+.upload-img-box .upload-pre-item {
+    overflow: hidden;
+    width: 120px;
+    max-height: 120px;
+    padding: 1px;
+    cursor: pointer;
+    transition: all .3s linear;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.upload-img-box .upload-pre-item img {
+    vertical-align: top;
+}
+
+.upload-img-box .upload-pre-file {
+    line-height: 35px;
+    overflow: hidden;
+    width: 380px;
+    height: 35px;
+    padding: 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px dashed #ccc;
+    background-color: #fff;
+}
+
+
+/* 上传图片点击弹出层 */
+
+.upload-img-popup {
+    position: fixed;
+    z-index: 9999;
+    padding: 3px;
+    border: 1px solid #c3c3c3;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.upload-img-popup .close-pop {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 17px;
+    height: 17px;
+    background: url(../images/bg_icon.png) no-repeat -25px 0;
+}
+
+.upload-img-popup .close-pop:hover {
+    text-decoration: none;
+    border-bottom: 0 none;
+}
+
+.upload-img-popup img {
+    display: block;
+}
+
+.upload_icon_all {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../images/attachment_1.png);
+}
